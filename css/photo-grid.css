@@ -1,0 +1,27 @@
+.photo-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-auto-rows: 250px;
+  padding: 2rem;
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) {
+  /*make the even columns span 2 rows*/
+  main > section:nth-of-type(2n + 2) {
+    grid-row: span 2 / auto;
+  }
+  main > section:nth-of-type(24) {
+    grid-row: span 1 / auto;
+  }
+  /*div > div:nth-child(even) {*/
+  /*  grid-row: span 2 / auto;*/
+  /*}*/
+  div > div > div {
+    background-position: center;
+  }
+  /*.card-tall {*/
+  /*  grid-row: span 2 / auto !important;*/
+  /*}*/
+}

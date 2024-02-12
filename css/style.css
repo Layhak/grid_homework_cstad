@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+
+body {
+  background: #282828;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: #fff !important;
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+nav {
+  background-color: #0a53be;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* Style the logo with a size and some padding */
+nav .logo {
+  height: 50px;
+  width: 50px;
+  background-color: #0d6efd;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+/* Style the search box */
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  outline: none;
+  border-radius: 5px;
+  border: #0a53be 3px solid;
+  width: 500px;
+}
+/* change placeholder color */
+::placeholder {
+  color: black;
+}
+
+/* Style the login .btn-login */
+/* Change the color of links on hover */
+.btn-login {
+  background: rgb(6, 14, 131);
+  background: linear-gradient(
+    0deg,
+    rgba(6, 14, 131, 1) 0%,
+    rgba(12, 25, 180, 1) 100%
+  );
+  border: none;
+}
+.btn-login {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.btn-login:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 3, 255, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+}
+.btn-login:focus {
+  outline: none;
+
+  background: rgb(0, 3, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 3, 255, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav input[type="text"] {
+    display: block;
+    text-align: left;
+    width: 200px;
+    margin: 10px !important;
+    padding: 14px;
+  }
+
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  background: #353535;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow:
+    rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  box-shadow:
+    rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+.uk-lightbox {
+  background: hsla(0, 0%, 20%, 0.8) !important;
+}
+
+@media screen and (max-width: 450px) {
+  .topnav input[type="text"] {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .topnav input[type="text"] {
+    width: 100px;
+  }
+}
